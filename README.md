@@ -1,0 +1,4 @@
+# BookMarks
+
+* Django
+* PostgreSQL
