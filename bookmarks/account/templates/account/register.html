@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Criar nova conta{% endblock %}
+{% block content %}
+    <h1> Criar nova conta {{ new_user.firs_name }}!</h1>
+    <form method="post">
+        {{ user_form.as_p }}
+        {% csrf_token %}
+        <p><input type="submit" value="Registrar"></p>
+    </form>
+{% endblock %}
